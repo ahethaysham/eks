@@ -1,0 +1,9 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: mphasisalta-ca-eks  
+  region: ap-south-1
+fargateProfiles:
+  - name: mphasisalta-app2
+    selectors:
+      - namespace: mphasisalta-app2

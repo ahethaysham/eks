@@ -1,0 +1,6 @@
+eksctl get fargateprofile --cluster mphasisalta-ca-eks
+
+eksctl create fargateprofile -f 1-fargate-profiles.yaml
+
+eksctl delete fargateprofile --cluster mphasisalta-ca-eks --name mphasisalta-app2 --wait
+
